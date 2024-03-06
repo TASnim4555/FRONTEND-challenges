@@ -1,0 +1,76 @@
+:root{
+    --color1:hsl(0, 0%, 8%);
+    --color2:hsl(0, 0%, 100%);
+    --color3:hsl(0, 0%, 20%);
+    --color4:hsl(0, 0%, 12%);
+    --color5: hsl(75, 94%, 57%);
+    
+}
+body{
+    background-color: var(--color1);
+}
+.container{
+    background-color: var(--color4);
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px;
+    border-radius: 4%;
+    position: relative;
+}
+.container .image img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+.container .introduce h2,.career{
+color: var(--color2);
+text-align: center;
+font-family: "inter";
+
+}
+.container .introduce .city{
+    color: var(--color5);
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 12px;
+}
+.container .introduce .career{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+ul li{
+    list-style: none;
+
+}
+ul .insta,.git,.front,.twit,.link{
+    color: var(--color2);
+    text-decoration: none;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 14px;
+    width:300px;
+    height: 20px;
+    background-color: var(--color3);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.git{
+    left: 50px;
+
+}
+.front{
+    left: 50px;
+    top: 520px;
+}
+
