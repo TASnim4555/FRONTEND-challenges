@@ -1,76 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 :root{
-    --color1:hsl(0, 0%, 8%);
-    --color2:hsl(0, 0%, 100%);
-    --color3:hsl(0, 0%, 20%);
-    --color4:hsl(0, 0%, 12%);
-    --color5: hsl(75, 94%, 57%);
-    
+--Green:hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--Dark-Grey: hsl(0, 0%, 12%);
+--Off-Black: hsl(0, 0%, 8%);
 }
 body{
-    background-color: var(--color1);
+    background-color: var(--Off-Black);
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 2rem 6rem;
+font-family: 'Inter';
 }
+
 .container{
-    background-color: var(--color4);
-    width: 500px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 100px;
-    border-radius: 4%;
-    position: relative;
+    background-color: var(--Dark-Grey);
+width: 26rem;
+height: 40rem;
+padding:1.5rem 2rem ;
+border-radius: 15px;
+margin: auto;
 }
-.container .image img{
+.image {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-bottom: 1.5rem;
+}
+.image img{
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-}
-.container .introduce h2,.career{
-color: var(--color2);
-text-align: center;
-font-family: "inter";
+    width: 100px;
+    height: 100px;
 
 }
-.container .introduce .city{
-    color: var(--color5);
+.introduce{
     text-align: center;
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 12px;
-}
-.container .introduce .career{
-    font-size: 15px;
-    font-weight: 600;
+    color: var(--White);
+
 
 }
-ul li{
-    list-style: none;
+.introduce h2{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.introduce .city{
+font-size: 0.8rem;
+color: var(--Green);
+font-weight: bold;
+margin-bottom: 1rem;
 
 }
-ul .insta,.git,.front,.twit,.link{
-    color: var(--color2);
-    text-decoration: none;
-    font-family: "Inter";
-    font-weight: 700;
-    font-size: 14px;
-    width:300px;
-    height: 20px;
-    background-color: var(--color3);
-    position: absolute;
+.introduce .career{
+    margin-bottom: 2rem;
+}
+.links ul{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
+    list-style: none;
+    justify-content: center;
+   
 }
-.git{
-    left: 50px;
+.links ul li {
+ background-color: var(--Grey);
+ padding: 1rem 0.8rem;
+ margin-bottom: 1rem;
+ border-radius: 0.5rem;
+ text-align: center;
+ 
 
 }
-.front{
-    left: 50px;
-    top: 520px;
+.links ul li a{
+    
+    color: var(--White);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.links ul li:hover{
+    background-color: var(--Green);
+    color: var(--Off-Black);
+
 }
 
