@@ -38,4 +38,49 @@ body{
 .image img{
     border-radius: 1rem;
 }
+.article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1.1rem;
+}
+.article h2{
+    background-color: var(--Yellow);
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.article .date{
+    margin-bottom: 1.4rem;
+font-size: 0.9rem;
+}
+.article .title{
+    margin-bottom: 1.9rem;
+font-size: 1.2rem;
+font-weight: bold;
+}
+.article .title:hover{
+    color: var(--Yellow);
+    cursor: pointer;
+}
+.article .artic{
+    color: var(--Grey);
+    margin-bottom: 3rem;
+}
+.foot .imagetwo{
+    display: flex;
+    flex-direction: row;
 
+}
+.foot .imagetwo img{
+width: 2.6rem;
+margin-right: 0.7rem;
+}
+.foot .imagetwo p{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
