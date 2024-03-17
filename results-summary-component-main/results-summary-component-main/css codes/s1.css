@@ -1,0 +1,75 @@
+:root{
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    
+    
+    --Lightslateblue : hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+    
+    --Violetblue: hsla(256, 72%, 46%, 1);
+    --Persianblue : hsla(241, 72%, 46%, 0);
+    
+    
+    
+    
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+}
+.container{
+    display: flex;
+   font-family: 'Hanken Grotesk';
+    width: 45rem;
+    height: 35rem;
+    background-color: #eee;
+    margin: 1rem auto;
+}
+.partOne{
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 6rem;
+    background-image: linear-gradient(to bottom,var(--Lightslateblue),var(--Lightroyalblue));
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.partOne .head{
+    position: absolute;
+    font-size: 1.5rem;
+    color: var(--Lightlavender);
+    font-weight: bold;
+    top: 0;
+}
+.partOne .screen{
+    width:13rem;
+    height:13rem;
+    display: flex;
+  justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8rem;
+    top: -3rem;
+    position: relative;
+    background-image: linear-gradient(to top,var(--Persianblue),var(--Violetblue));
+}
+.partOne .screen .socre{
+    color: var(--White);
+    font-size: 5rem;
+    font-weight: 800;
+    position: absolute;
+}
+.partOne .screen .from{
+    position: absolute;
+    bottom: 1.9rem;
+    color: var(--Lightlavender);
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+
+
